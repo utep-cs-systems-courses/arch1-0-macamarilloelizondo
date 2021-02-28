@@ -13,7 +13,6 @@ int main()
     while ((c = getchar()) == '\n'); /* ignore newlines */
     if (c == EOF)		     /* terminate on end-of-file */
       goto done;
-
     // Given the user answer, select which method to call
     switch (c) {
     case 't':
@@ -28,6 +27,10 @@ int main()
       puts("You selected chars:");
       for (char c = 'A'; c < 'D'; c++)
 	print_char_11x16(c);
+      break;
+    case 'a':
+      puts("You selected arrow: ");
+      print_arrow(5,7);
       break;
     case 'q':
       puts("Bye!");
